@@ -78,15 +78,314 @@
     {
       "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
-    },
-    {
-      "group": "Address Book",
-      "pages": [
-        "api-reference/address-book/*"
+        {
+          "group": "Blockchains",
+          "pages": [
+            "blockchains/list-chains",
+            "blockchains/get-suggested-fees",
+            "blockchains/get-rpc-endpoints"
+          ]
+        },
+        {
+          "group": "Users",
+          "pages": [
+            "users/list-users",
+            "users/create-user",
+            "users/list-users-ext",
+            "users/count-users",
+            "users/get-current-user-info",
+            "users/get-current-user-onboarding-info",
+            "users/get-membership-organizations",
+            "users/delete-pending-invitations",
+            "users/get-user",
+            "users/delete-user",
+            "users/abort-user",
+            "users/approve-user-onboarding",
+            "users/get-user-onboarding-state",
+            "users/get-delete-user-prerequisites",
+            "users/api-signer-keep-alive",
+            "users/register-api-signer-invite",
+            "users/complete-api-signer-onboarding",
+            "users/set-api-user-key",
+            "users/remove-api-user-key",
+            "users/disable-user",
+            "users/disable-membership",
+            "users/abort-device-onboarding",
+            "users/acknowledge-banner",
+            "users/reset-user-mfa",
+            "users/submit-user-change-proposal",
+            "users/approve-user-change-proposal",
+            "users/abort-user-change-proposal"
+          ]
+        },
+        {
+          "group": "User Groups",
+          "pages": [
+            "user-groups/list-user-groups",
+            "user-groups/create-user-group",
+            "user-groups/get-user-group",
+            "user-groups/delete-group",
+            "user-groups/submit-user-group-change-proposal",
+            "user-groups/approve-user-group-change-proposal",
+            "user-groups/abort-user-group-change-proposal",
+            "user-groups/get-delete-group-prerequisites"
+          ]
+        },
+        {
+          "group": "Vaults",
+          "pages": [
+            "vaults/list-vaults",
+            "vaults/create-vault",
+            "vaults/list-vaults-with-assets",
+            "vaults/export-vaults-with-assets",
+            "vaults/get-vault-metadata",
+            "vaults/get-vault",
+            "vaults/get-vault-asset",
+            "vaults/get-vault-assets",
+            "vaults/archive-vault",
+            "vaults/restore-vault",
+            "vaults/rename-vault",
+            "vaults/list-vault-addresses",
+            "vaults/create-address",
+            "vaults/rename-vault-address"
+          ]
+        },
+        {
+          "group": "Vault Groups",
+          "pages": [
+            "vault-groups/list-vault-groups",
+            "vault-groups/create-vault-group",
+            "vault-groups/update-vault-group-permissions",
+            "vault-groups/submit-vault-group-change-proposal",
+            "vault-groups/approve-vault-group-change-proposal",
+            "vault-groups/abort-vault-group-change-proposal"
+          ]
+        },
+        {
+          "group": "Assets",
+          "pages": [
+            "assets/get-owned-asset",
+            "assets/list-owned-assets",
+            "assets/update-asset-configuration",
+            "assets/fetch-asset-prices",
+            "assets/list-assets",
+            "assets/enrich-assets"
+          ]
+        },
+        {
+          "group": "Transactions",
+          "pages": [
+            "transactions/get-next-api-signer-transaction",
+            "transactions/get-next-api-signer-transaction-v2",
+            "transactions/process-next-api-signer-transaction-v3",
+            "transactions/export-transactions",
+            "transactions/get-transaction",
+            "transactions/list-transactions",
+            "transactions/create-transaction",
+            "transactions/create-transaction-with-wait",
+            "transactions/approve-transaction",
+            "transactions/abort-transaction",
+            "transactions/release-transaction",
+            "transactions/describe-transaction",
+            "transactions/predict-transaction",
+            "transactions/register-transaction-sign-session",
+            "transactions/submit-transaction-signature",
+            "transactions/push-transaction",
+            "transactions/update-transaction-for-signing",
+            "transactions/update-transaction-spam-state",
+            "transactions/bulk-create-transactions",
+            "transactions/bulk-describe-transactions",
+            "transactions/bulk-predict-transactions",
+            "transactions/bulk-abort-transactions",
+            "transactions/bulk-approve-transactions"
+          ]
+        },
+        {
+          "group": "Address Book",
+          "pages": [
+            "address-book/list-contacts",
+            "address-book/create-contact",
+            "address-book/abort-contact",
+            "address-book/approve-contact",
+            "address-book/sign-contact-change-proposal",
+            "address-book/edit-contact",
+            "address-book/get-delete-contact-prerequisites",
+            "address-book/delete-contact",
+            "address-book/list-groups",
+            "address-book/create-group",
+            "address-book/edit-group",
+            "address-book/delete-group",
+            "address-book/abort-group-edit",
+            "address-book/approve-group-edit",
+            "address-book/get-delete-group-prerequisites"
+          ]
+        },
+        {
+          "group": "Webhooks",
+          "pages": [
+            "webhooks/list-webhooks",
+            "webhooks/create-webhook",
+            "webhooks/delete-webhook",
+            "webhooks/test-webhook",
+            "webhooks/get-webhooks-verification-key",
+            "webhooks/trigger-transaction-webhook",
+            "webhooks/revive-webhook"
+          ]
+        },
+        {
+          "group": "Keysets",
+          "pages": [
+            "keysets/list-keysets",
+            "keysets/create-keyset",
+            "keysets/get-keyset",
+            "keysets/upload-encrypted-device-shares",
+            "keysets/set-desired-key-types"
+          ]
+        },
+        {
+          "group": "Organizations",
+          "pages": [
+            "organizations/get-mpc-shares",
+            "organizations/list-organizations",
+            "organizations/update-organization",
+            "organizations/start-onboarding",
+            "organizations/complete-onboarding",
+            "organizations/config-mfa"
+          ]
+        },
+        {
+          "group": "Mpc Sessions",
+          "pages": [
+            "mpc-sessions/get-mpc-message",
+            "mpc-sessions/post-mpc-message",
+            "mpc-sessions/abort-mpc-session",
+            "mpc-sessions/register-keygen",
+            "mpc-sessions/create-master-key",
+            "mpc-sessions/create-user-key",
+            "mpc-sessions/initiate-sign-session",
+            "mpc-sessions/set-mock-keygen-seed"
+          ]
+        },
+        {
+          "group": "Contracts",
+          "pages": [
+            "contracts/update-contract"
+          ]
+        },
+        {
+          "group": "User Actions",
+          "pages": [
+            "user-actions/list-user-actions"
+          ]
+        },
+        {
+          "group": "Transactions Policy",
+          "pages": [
+            "transactions-policy/get-transactions-policy",
+            "transactions-policy/get-transactions-policy-proposal",
+            "transactions-policy/submit-transactions-policy-proposal",
+            "transactions-policy/approve-transactions-policy-proposal",
+            "transactions-policy/abort-transactions-policy-proposal"
+          ]
+        },
+        {
+          "group": "Wallet",
+          "pages": [
+            "wallet/connect-wallet"
+          ]
+        },
+        {
+          "group": "Devices",
+          "pages": [
+            "devices/verify-public-key",
+            "devices/register-invite",
+            "devices/create-new-device",
+            "devices/abort-create-new-device",
+            "devices/complete-onboarding",
+            "devices/get-encrypted-mpc-keys",
+            "devices/update-device-push-token",
+            "devices/disable-device"
+          ]
+        },
+        {
+          "group": "Backups",
+          "pages": [
+            "backups/download-backup-snapshot",
+            "backups/start-public-key-backup",
+            "backups/start-key-share-backup",
+            "backups/abort-backup",
+            "backups/approve-backup",
+            "backups/sign-public-key-backup",
+            "backups/sign-key-share-backup",
+            "backups/get-backup-info",
+            "backups/start-backup-email-change",
+            "backups/abort-email-change",
+            "backups/confirm-email-change",
+            "backups/get-backup-keys",
+            "backups/migrate-backup"
+          ]
+        },
+        {
+          "group": "End Users",
+          "pages": [
+            "end-users/list-end-users",
+            "end-users/create-end-user",
+            "end-users/end-user-login",
+            "end-users/get-end-user"
+          ]
+        },
+        {
+          "group": "Authorization Tokens",
+          "pages": [
+            "authorization-tokens/list-authorization-tokens",
+            "authorization-tokens/issue-authorization-token",
+            "authorization-tokens/delete-authorization-token",
+            "authorization-tokens/hidden-issue-authorization-token"
+          ]
+        },
+        {
+          "group": "Admin Quorum",
+          "pages": [
+            "admin-quorum/get-admin-quorum",
+            "admin-quorum/set-admin-quorum",
+            "admin-quorum/approve-admin-quorum-change-proposal",
+            "admin-quorum/abort-admin-quorum-change-proposal"
+          ]
+        },
+        {
+          "group": "Impersonations",
+          "pages": [
+            "impersonations/set-impersonation-by-user",
+            "impersonations/set-impersonation-by-organization",
+            "impersonations/get-impersonation"
+          ]
+        },
+        {
+          "group": "Logs",
+          "pages": [
+            "logs/create-logs"
+          ]
+        },
+        {
+          "group": "Enclave Keys",
+          "pages": [
+            "enclave-keys/list-enclave-keys"
+          ]
+        },
+        {
+          "group": "Invites",
+          "pages": [
+            "invites/get-api-signer-invite"
+          ]
+        },
+        {
+          "group": "Auth Tokens",
+          "pages": [
+            "auth-tokens/issue-auth-token-for-client",
+            "auth-tokens/issue-auth-token-for-client-oauth-format",
+            "auth-tokens/issue-internal-auth-token"
+          ]
+        }
       ]
     }
   ],
