@@ -86,7 +86,7 @@
     {
       "group": "AddressBook",
       "pages": [
-        "address-book/"
+        "address-book/*"
       ]
     }
   ],
