@@ -84,9 +84,9 @@
       ]
     },
     {
-      "group": "AddressBook",
+      "group": "Address Book",
       "pages": [
-        "address-book/abort-contact"
+        "api-reference/address-book/abort-contact"
       ]
     }
   ],
