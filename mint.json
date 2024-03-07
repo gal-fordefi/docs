@@ -82,6 +82,12 @@
         "api-reference/endpoint/create",
         "api-reference/endpoint/delete"
       ]
+    },
+    {
+      "group": "AddressBook",
+      "pages": [
+        "address-book/"
+      ]
     }
   ],
   "footerSocials": {
