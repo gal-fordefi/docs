@@ -86,7 +86,7 @@
     {
       "group": "Address Book",
       "pages": [
-        "api-reference/address-book/abort-contact"
+        "api-reference/address-book/*"
       ]
     }
   ],
